@@ -65,26 +65,35 @@ class _AgriInputRequestState extends State<AgriInputRequest> {
 
                   children: [
                     ExpansionTile(
-                      trailing: Icon(
-                        Icons.keyboard_arrow_down_outlined,
-                        color: backgroundColor,
-                      ),
+            trailing: Icon(
+            Icons.keyboard_arrow_down_outlined,
+              color: backgroundColor,
+            ),
                       title: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+                        CircleAvatar(
+                          backgroundColor: backgroundColor,
+                          backgroundImage: AssetImage("asset/image/image.jpeg"),
+                        ),
 
-                        Text("Name",
-                        style: TextStyle(
-                          color: backgroundColor,
-                        ),),
+                        Container(
+                          width: 100,
+                          child: Text("Alex Lee \nMon,13 Apr,10:42AM",
+                          style: TextStyle(
+                            color: backgroundColor,
+                          ),),
+                        ),
                         Container(
                           height: 30,
                          padding: EdgeInsets.all(5),
                           decoration: BoxDecoration(
                             border: Border.all(color: backgroundColor)
                           ),
+
                           child: Row(
                             children: [
+
                               Text("Download",
                                 style: TextStyle(
                                   color: backgroundColor,
